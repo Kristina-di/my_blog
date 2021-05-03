@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Fredoka+One'>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+  <title>Blog</title>
+</head>
+
+<body>
+  <div class="instructions">
+  <header>
+    <div id="text">
+      <!-- content generated with JS -->  
+      </div>
+    </header>
+
+  <div class="container" style="padding-top: 50px;">
+    <div class="row">
+      <div class="col s12 m8 offset-m2 16 offset-13" id="posts">
+        <div class="center">
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="fixed-action-btn">
+    <a class="modal-trigger" data-target="createForm">
+      <button class="bubbly-button">Add Post</button>
+    </a>
+  </div>
+    <!-- Modal Structure -->
+    <div id="createForm" class="modal">
+      <div class="modal-content">
+        <h4>Create new post</h4>
+        <div class="input-field">
+          <input id="title" type="text" class="validate" required>
+          <label for="title">Post Name</label>
+        </div>
+
+        <div class="input-field">
+          <textarea id="text" class="materialize-textarea"></textarea>
+          <label for="text">Post Name</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a class="waves-effect waves-light btn" id="createPost">Create Post</a>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<canvas></canvas>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src ="index.js"></script>
+</body>
+</html>
+
